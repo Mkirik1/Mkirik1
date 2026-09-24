@@ -33,17 +33,6 @@ I build things that see, decide and respond: neural networks that read sign lang
 
 <img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,opencv,cpp,arduino,raspberrypi,nextjs,react,ts,tailwind,figma,linux,docker,git&perline=15" alt="Python, PyTorch, TensorFlow, OpenCV, C++, Arduino, Raspberry Pi, Next.js, React, TypeScript, Tailwind, Figma, Linux, Docker, Git">
 
-### Activity
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=Mkirik1&show_icons=true&hide_border=true&bg_color=05293A&title_color=FEC50C&icon_color=FEC50C&text_color=F3F7F9&hide_rank=true">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Mkirik1&show_icons=true&hide_border=true&bg_color=E4F4F8&title_color=05293A&icon_color=E0A800&text_color=05293A&hide_rank=true" alt="GitHub stats">
-</picture>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=Mkirik1&layout=compact&hide_border=true&bg_color=05293A&title_color=FEC50C&text_color=F3F7F9">
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mkirik1&layout=compact&hide_border=true&bg_color=E4F4F8&title_color=05293A&text_color=05293A" alt="Top languages">
-</picture>
-
 ### Say hello
 
 Open to research collaborations, internships and interesting hardware. The fastest way to reach me is through [my GitHub](https://github.com/Mkirik1).
