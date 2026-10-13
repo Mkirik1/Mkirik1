@@ -5,7 +5,7 @@
 
 <br>
 
-I build things that see, decide and respond: neural networks that read sign language, controllers that talk to sensors, and interfaces people actually enjoy using. Final-year Smart Technology student at Astana IT University. In between commits I run my own coffee shop, Rumaks, which is where most of my ideas get tested on real people.
+I build things that see, decide and respond: neural networks that read sign language, controllers that talk to sensors, and interfaces people actually enjoy using. Final-year Smart Technology student at Astana IT University. I also build software for real businesses, like the digital menu and shift system used every day at the Coffee Lake coffee shop.
 
 <br>
 
@@ -16,7 +16,7 @@ I build things that see, decide and respond: neural networks that read sign lang
 <td width="25%" valign="top"><b>Models</b><br><sub>Machine learning, deep reinforcement learning, computer vision</sub></td>
 <td width="25%" valign="top"><b>Machines</b><br><sub>Embedded systems, IIoT, networking (Cisco, Huawei ICT)</sub></td>
 <td width="25%" valign="top"><b>Interfaces</b><br><sub>Frontend, UX and UI design, product thinking</sub></td>
-<td width="25%" valign="top"><b>Real life</b><br><sub>Running a coffee shop and building its software myself</sub></td>
+<td width="25%" valign="top"><b>Real life</b><br><sub>Software for real businesses, used every day by staff and guests</sub></td>
 </tr>
 </table>
 
@@ -25,7 +25,7 @@ I build things that see, decide and respond: neural networks that read sign lang
 | Project | What it does | Stack |
 | :-- | :-- | :-- |
 | [**XZT-IIoT**](https://github.com/Mkirik1/xzt-iiot) | Explainable zero-trust access control for industrial IoT: per-request trust scoring with feature-level explanations, adversarial validation and a lightweight hash-chain audit log. Evaluated on the real Edge-IIoTset dataset. Paper submitted to IEEE BSS 2026 | Python, scikit-learn, SHAP |
-| **Rumaks**<br><sub>[menu](https://github.com/Mkirik1/menu) · [kassa](https://github.com/Mkirik1/kassa)</sub> | All the software behind my coffee shop, used every day by real customers and baristas. A multilingual digital menu with WhatsApp ordering and Google Sheets as a live CMS, plus a shift-closing system where baristas upload receipt photos to Drive and the owner reviews everything in a password-protected admin panel | Next.js, Google Apps Script, Sheets API |
+| **Coffee Lake menu & shifts**<br><sub>for Rumaks · [menu](https://github.com/Mkirik1/menu) · [kassa](https://github.com/Mkirik1/kassa)</sub> | Software I built for the Coffee Lake coffee shop, used every day by real customers and baristas. A multilingual digital menu with WhatsApp ordering and Google Sheets as a live CMS, plus a shift-closing system where baristas upload receipt photos to Drive and the owner reviews everything in a password-protected admin panel | Next.js, Google Apps Script, Sheets API |
 | **Russian Sign Language recognition** | Video to gestures to text for deaf and hard of hearing users, built for the Visual Mind platform. Pose and hand keypoints from MediaPipe Holistic feed a sequence model trained on the Slovo dataset; realtime mode is next. In progress | PyTorch, MediaPipe, OpenCV |
 | **Cargo request agent** | AI agent that reads logistics WhatsApp groups, detects cargo requests and turns free text into structured JSON (route, weight, dates, contact), normalizes cities, removes duplicates and pushes loads to a drivers' app | Node.js, Baileys, Claude API |
 | **Fair traffic signal control** | Deep reinforcement learning agent that controls traffic lights while keeping waiting time fair across directions, simulated in SUMO. Co-authored IEEE-level paper | Python, SUMO / TraCI, DRL |
