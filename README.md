@@ -1,37 +1,26 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="hero-dark.svg">
-  <img src="hero-light.svg" width="100%" alt="Maxim Kirik. Models, machines and interfaces. Built in Astana.">
-</picture>
+<p align="center">
+  <img src="./cards/hero.svg" width="100%" alt="Maxim Kirik. AI engineer, CDO at AIS, Astana. Open to work.">
+</p>
 
-<br>
+I build things that see, decide and respond: neural networks that read sign language, controllers that talk to sensors, and interfaces people actually enjoy using. Smart Technology student at Astana IT University and CDO of the AIS team.
 
-I build things that see, decide and respond: neural networks that read sign language, controllers that talk to sensors, and interfaces people actually enjoy using. Smart Technology student at Astana IT University and CDO of the AIS team, where I design the structure and UX of our products. I also build software for real businesses, like the digital menu and shift system used every day at the Coffee Lake coffee shop.
+<p align="center">
+  <a href="https://github.com/Mkirik1"><img src="./cards/quest-rsl.svg" width="49%" alt="Quest 01: Russian Sign Language recognition for TilMind"></a>
+  <a href="https://github.com/Mkirik1/xzt-iiot"><img src="./cards/quest-xzt.svg" width="49%" alt="Quest 02: XZT-IIoT explainable zero-trust access control"></a>
+  <a href="https://github.com/Mkirik1"><img src="./cards/quest-ais.svg" width="49%" alt="Quest 03: Tutas and ConstructionOS, CDO at AIS"></a>
+  <a href="https://github.com/Mkirik1/menu"><img src="./cards/quest-coffee.svg" width="49%" alt="Quest 04: Coffee Lake menu and shift system"></a>
+  <a href="https://github.com/Mkirik1"><img src="./cards/quest-cargo.svg" width="49%" alt="Quest 05: Cargo request AI agent"></a>
+  <a href="https://github.com/Mkirik1"><img src="./cards/quest-traffic.svg" width="49%" alt="Quest 06: Fair traffic signal control with deep RL"></a>
+  <a href="https://github.com/hpns47/ieee-bss-ee-provenance-poc"><img src="./cards/quest-land.svg" width="49%" alt="Quest 07: Hidden land surface change detection"></a>
+  <a href="https://github.com/Mkirik1"><img src="./cards/quest-shorts.svg" width="49%" alt="Quest 08: Short-form video pipeline"></a>
+</p>
 
-<br>
-
-### What I work on
-
-<table>
-<tr>
-<td width="25%" valign="top"><b>Models</b><br><sub>Machine learning, deep reinforcement learning, computer vision</sub></td>
-<td width="25%" valign="top"><b>Machines</b><br><sub>Embedded systems, IIoT, networking (Cisco, Huawei ICT)</sub></td>
-<td width="25%" valign="top"><b>Interfaces</b><br><sub>Frontend, UX and UI design, product thinking</sub></td>
-<td width="25%" valign="top"><b>Real life</b><br><sub>Software for real businesses, used every day by staff and guests</sub></td>
-</tr>
-</table>
-
-### Selected projects
-
-| Project | What it does | Stack |
-| :-- | :-- | :-- |
-| [**XZT-IIoT**](https://github.com/Mkirik1/xzt-iiot) | Explainable zero-trust access control for industrial IoT: per-request trust scoring with feature-level explanations, adversarial validation and a lightweight hash-chain audit log. Evaluated on the real Edge-IIoTset dataset | Python, scikit-learn, SHAP |
-| **Coffee Lake menu & shifts**<br><sub>for Rumaks · [menu](https://github.com/Mkirik1/menu) · [kassa](https://github.com/Mkirik1/kassa)</sub> | Software I built for the Coffee Lake coffee shop, used every day by real customers and baristas. A multilingual digital menu with WhatsApp ordering and Google Sheets as a live CMS, plus a shift-closing system where baristas upload receipt photos to Drive and the owner reviews everything in a password-protected admin panel | Next.js, Google Apps Script, Sheets API |
-| **Russian Sign Language recognition** | Video to gestures to text for deaf and hard of hearing users, built for the TilMind platform. Pose and hand keypoints from MediaPipe Holistic feed an LSTM/Transformer sequence model trained on the Slovo dataset. Deployed in Docker behind Nginx on the client's server and used in the product | PyTorch, MediaPipe, OpenCV, Docker |
-| **Tutas & ConstructionOS**<br><sub>AIS team · CDO</sub> | Product structure and UX/UI design for Tutas, a team task manager with director and employee roles, and ConstructionOS, a digital construction supervision system with an agreed integration with the state platform E-Qurylys | Figma, Next.js |
-| **Cargo request agent** | AI agent that reads logistics WhatsApp groups, detects cargo requests and turns free text into structured JSON (route, weight, dates, contact), normalizes cities, removes duplicates and pushes loads to a drivers' app | Node.js, Baileys, Claude API |
-| **Fair traffic signal control** | Deep reinforcement learning agent that controls traffic lights while keeping waiting time fair across directions, simulated in SUMO. Co-authored IEEE SIST 2026 paper | Python, SUMO / TraCI, DRL |
-| **Hidden land change detection** | Framework that decouples optical and radar satellite signals to find land surface changes hidden from either sensor alone. Paper at SIST 2026, extended with a [blockchain provenance layer](https://github.com/hpns47/ieee-bss-ee-provenance-poc) | Python, remote sensing |
-| **Short-form video pipeline** | Turns long videos into ready-to-post shorts: automatic subtitles with faster-whisper and cut points from scene detection | Python, faster-whisper, FFmpeg |
+<p align="center">
+  <img src="./cards/achievements.svg" width="100%" alt="Achievements: IEEE SIST 2026 papers, Scopus, government internship, WorldSkills, Cisco and Huawei ICT, E-Qurylys integration, Enactus, software in production">
+  <img src="./cards/journey.svg" width="100%" alt="Path: Astana IT College 2022, government internship 2024, AITU 2024, IT support engineer 2025, CDO at AIS 2026, ML engineer at TilMind 2026">
+  <img src="./cards/stats.svg" width="100%" alt="Skills: machine learning and computer vision, UX/UI design, frontend, embedded and IIoT">
+  <img src="./cards/activity.svg" width="100%" alt="GitHub activity over the last 12 months">
+</p>
 
 ### Research
 
@@ -39,19 +28,8 @@ I build things that see, decide and respond: neural networks that read sign lang
 - **Multi-Level Optical-Radar Correlation Decoupling Framework for Hidden Land Surface Change Detection**. IEEE SIST 2026, co-author
 - **XZT-IIoT: Explainable Zero-Trust Access Control with Lightweight Blockchain Audit for Industrial IoT**. Paper in preparation
 
-### Tools I reach for
+### Join my party
 
-<img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,opencv,cpp,arduino,raspberrypi,nextjs,react,ts,tailwind,figma,linux,docker,git&perline=15" alt="Python, PyTorch, TensorFlow, OpenCV, C++, Arduino, Raspberry Pi, Next.js, React, TypeScript, Tailwind, Figma, Linux, Docker, Git">
+Open to freelance, full-time roles and research collaborations. [LinkedIn](https://linkedin.com/in/maxim-kirik) · m3495245@gmail.com
 
-### Say hello
-
-Open to research collaborations, internships and interesting hardware. Reach me on [LinkedIn](https://linkedin.com/in/maxim-kirik) or by email at m3495245@gmail.com.
-
-<br>
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="sun-dark.svg">
-    <img src="sun-light.svg" width="60" alt="">
-  </picture>
-</p>
+<sub>Cards are animated SVGs built by <code>scripts/build_cards.py</code> and refreshed daily by a GitHub Action. Fonts: Press Start 2P and VT323 (SIL Open Font License).</sub>
