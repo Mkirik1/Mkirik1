@@ -1,0 +1,54 @@
+{
+ "total": 34,
+ "streak": 2,
+ "months": [
+  {
+   "label": "DEC",
+   "count": 0
+  },
+  {
+   "label": "JAN",
+   "count": 0
+  },
+  {
+   "label": "FEB",
+   "count": 0
+  },
+  {
+   "label": "MAR",
+   "count": 0
+  },
+  {
+   "label": "APR",
+   "count": 0
+  },
+  {
+   "label": "MAY",
+   "count": 0
+  },
+  {
+   "label": "JUN",
+   "count": 5
+  },
+  {
+   "label": "JUL",
+   "count": 0
+  },
+  {
+   "label": "AUG",
+   "count": 17
+  },
+  {
+   "label": "SEP",
+   "count": 4
+  },
+  {
+   "label": "OCT",
+   "count": 6
+  },
+  {
+   "label": "NOV",
+   "count": 2
+  }
+ ]
+}
