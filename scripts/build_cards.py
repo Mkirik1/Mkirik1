@@ -176,7 +176,7 @@ def skyline(x0, base, w):
 
 def hero():
     W, H = 1200, 420
-    typed = "AI ENGINEER / CDO @ AIS / ASTANA"
+    typed = "AI ENGINEER / ML + CV / ASTANA"
     n = len(typed)
     CW = 14.6
     steps = ";".join(str(int(CW * i)) for i in range(n + 1))
@@ -222,8 +222,8 @@ QUESTS = [
          chips=["Python", "scikit-learn", "SHAP"],
          sprite=["....aa....", "..aaaaaa..", ".aaaaaaaa.", ".aabbbbaa.", ".aabaabaa.", ".aabbbbaa.",
                  ".aaabbaaa.", "..aaaaaa..", "...aaaa...", "....aa...."], col={"a": CYAN, "b": INK}),
-    dict(slug="quest-ais", no="03", title="TUTAS + CONSTRUCTIONOS", status="CDO @ AIS", sc=PINK,
-         text="Product structure and UX/UI design for the AIS team. Tutas is a team task manager with director "
+    dict(slug="quest-ais", no="03", title="TUTAS + CONSTRUCTIONOS", status="STARTUP", sc=PINK,
+         text="Product structure and UX/UI design in the AIS startup, where I am CDO. Tutas is a team task manager with director "
               "and employee roles. ConstructionOS is a digital construction supervision system with an agreed "
               "two-way integration with the state platform E-Qurylys.",
          chips=["Figma", "Next.js", "UX/UI"],
@@ -373,7 +373,7 @@ def achievements():
 
 # ---------------------------------------------------------------- journey
 JOURNEY = [("2022", "ASTANA IT", "COLLEGE"), ("2024", "GOV", "INTERNSHIP"), ("2024", "AITU", "BACHELOR"),
-           ("2025", "IT SUPPORT", "ENGINEER"), ("2026", "CDO", "@ AIS"), ("2026", "ML ENG", "TILMIND"), ("2027", "NEXT", "LEVEL?")]
+           ("2025", "IT SUPPORT", "ENGINEER"), ("2026", "STARTUP", "CDO"), ("2026", "ML ENG", "TILMIND"), ("2027", "NEXT", "LEVEL?")]
 
 
 def journey():

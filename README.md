@@ -1,13 +1,13 @@
 <p align="center">
-  <picture><source media="(prefers-color-scheme: light)" srcset="./cards/hero-light.svg"><img src="./cards/hero.svg" width="100%" alt="Maxim Kirik. AI engineer, CDO at AIS, Astana. Open to work."></picture>
+  <picture><source media="(prefers-color-scheme: light)" srcset="./cards/hero-light.svg"><img src="./cards/hero.svg" width="100%" alt="Maxim Kirik. AI engineer, ML and computer vision, Astana. Open to work."></picture>
 </p>
 
-I build things that see, decide and respond: neural networks that read sign language, controllers that talk to sensors, and interfaces people actually enjoy using. Smart Technology student at Astana IT University and CDO of the AIS team.
+I build things that see, decide and respond: neural networks that read sign language, controllers that talk to sensors, and interfaces people actually enjoy using. Smart Technology student at Astana IT University, also leading product design in the AIS startup.
 
 <p align="center">
   <a href="https://github.com/Mkirik1"><picture><source media="(prefers-color-scheme: light)" srcset="./cards/quest-rsl-light.svg"><img src="./cards/quest-rsl.svg" width="49%" alt="Quest 01: Russian Sign Language recognition for TilMind"></picture></a>
   <a href="https://github.com/Mkirik1/xzt-iiot"><picture><source media="(prefers-color-scheme: light)" srcset="./cards/quest-xzt-light.svg"><img src="./cards/quest-xzt.svg" width="49%" alt="Quest 02: XZT-IIoT explainable zero-trust access control"></picture></a>
-  <a href="https://github.com/Mkirik1"><picture><source media="(prefers-color-scheme: light)" srcset="./cards/quest-ais-light.svg"><img src="./cards/quest-ais.svg" width="49%" alt="Quest 03: Tutas and ConstructionOS, CDO at AIS"></picture></a>
+  <a href="https://github.com/Mkirik1"><picture><source media="(prefers-color-scheme: light)" srcset="./cards/quest-ais-light.svg"><img src="./cards/quest-ais.svg" width="49%" alt="Quest 03: Tutas and ConstructionOS, AIS startup"></picture></a>
   <a href="https://github.com/Mkirik1/menu"><picture><source media="(prefers-color-scheme: light)" srcset="./cards/quest-coffee-light.svg"><img src="./cards/quest-coffee.svg" width="49%" alt="Quest 04: Coffee Lake menu and shift system"></picture></a>
   <a href="https://github.com/Mkirik1"><picture><source media="(prefers-color-scheme: light)" srcset="./cards/quest-cargo-light.svg"><img src="./cards/quest-cargo.svg" width="49%" alt="Quest 05: Cargo request AI agent"></picture></a>
   <a href="https://github.com/Mkirik1"><picture><source media="(prefers-color-scheme: light)" srcset="./cards/quest-traffic-light.svg"><img src="./cards/quest-traffic.svg" width="49%" alt="Quest 06: Fair traffic signal control with deep RL"></picture></a>
@@ -17,7 +17,7 @@ I build things that see, decide and respond: neural networks that read sign lang
 
 <p align="center">
   <picture><source media="(prefers-color-scheme: light)" srcset="./cards/achievements-light.svg"><img src="./cards/achievements.svg" width="100%" alt="Achievements: IEEE SIST 2026 papers, Scopus, government internship, WorldSkills, Cisco and Huawei ICT, E-Qurylys integration, Enactus, software in production"></picture>
-  <picture><source media="(prefers-color-scheme: light)" srcset="./cards/journey-light.svg"><img src="./cards/journey.svg" width="100%" alt="Path: Astana IT College 2022, government internship 2024, AITU 2024, IT support engineer 2025, CDO at AIS 2026, ML engineer at TilMind 2026"></picture>
+  <picture><source media="(prefers-color-scheme: light)" srcset="./cards/journey-light.svg"><img src="./cards/journey.svg" width="100%" alt="Path: Astana IT College 2022, government internship 2024, AITU 2024, IT support engineer 2025, startup CDO 2026, ML engineer at TilMind 2026"></picture>
   <picture><source media="(prefers-color-scheme: light)" srcset="./cards/stats-light.svg"><img src="./cards/stats.svg" width="100%" alt="Skills: machine learning and computer vision, UX/UI design, frontend, embedded and IIoT"></picture>
   <picture><source media="(prefers-color-scheme: light)" srcset="./cards/activity-light.svg"><img src="./cards/activity.svg" width="100%" alt="GitHub activity over the last 12 months"></picture>
 </p>
