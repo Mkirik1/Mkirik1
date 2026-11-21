@@ -26,6 +26,25 @@ CYAN = "#4cc9f0"
 GREEN = "#8ce36b"
 TEXT = "#f2e9ff"
 DIM = "#a59bd0"
+LIGHT2 = "#3a2f80"
+BUILD = "#2a2160"
+STAR = None
+
+THEME = os.environ.get("THEME", "dark")
+SUFFIX = "" if THEME == "dark" else "-light"
+if THEME == "light":
+    BG = "#fbf5e6"
+    PANEL = "#fffaf0"
+    PANEL2 = "#efe7ff"
+    INK = "#2b2142"
+    PINK = "#d9336a"
+    GOLD = "#c27c00"
+    CYAN = "#1b7fb3"
+    GREEN = "#2b8a3e"
+    TEXT = "#2b2142"
+    DIM = "#6a6090"
+    LIGHT2 = "#e2d6ff"
+    BUILD = "#cbbdf0"
 
 
 def b64(path):
@@ -103,38 +122,86 @@ def esc(s):
 
 
 # ---------------------------------------------------------------- hero
+BAITEREK = [
+    "........ccc.........",
+    "......ccgggcc.......",
+    ".....cgggggggc......",
+    "....cgggwgggggc.....",
+    "....cggwwgggggc.....",
+    "....cgggggggggc.....",
+    ".....cgggggggc......",
+    "...s..cgggggc..s....",
+    "...ss..ccccc..ss....",
+    "....ss...s...ss.....",
+    ".....ss..s..ss......",
+    "......ss.s.ss.......",
+    ".......sssss........",
+    "........sss.........",
+    "........sss.........",
+    "........sss.........",
+    "........sss.........",
+    "........sss.........",
+    "........sss.........",
+    "........sss.........",
+    "........sss.........",
+    "........sss.........",
+    "........sss.........",
+    "........sss.........",
+    "........sss.........",
+    "........sss.........",
+    ".......sssss........",
+    "......sssssss.......",
+    ".....sssssssss......",
+]
+
+
+def skyline(x0, base, w):
+    import random
+    r = random.Random(3)
+    out = []
+    x = x0
+    while x < x0 + w:
+        bw = r.choice([36, 48, 60])
+        bh = r.choice([70, 90, 110, 130, 150])
+        if x0 + 150 < x < x0 + 250:
+            bh = r.choice([60, 80])
+        out.append(f'<rect x="{x}" y="{base - bh}" width="{bw - 6}" height="{bh}" fill="{BUILD}"/>')
+        for wy in range(base - bh + 12, base - 10, 18):
+            for wx in range(x + 8, x + bw - 14, 14):
+                if r.random() < 0.45:
+                    out.append(f'<rect class="tw" style="animation-delay:{r.random() * 2.4:.2f}s" x="{wx}" y="{wy}" width="6" height="6" fill="{GOLD}"/>')
+        x += bw
+    return "".join(out)
+
+
 def hero():
     W, H = 1200, 420
-    av = b64(ASSETS / "avatar96.png")
     typed = "AI ENGINEER / CDO @ AIS / ASTANA"
     n = len(typed)
-    # typewriter: discrete reveal of the clip width
     CW = 14.6
     steps = ";".join(str(int(CW * i)) for i in range(n + 1))
     times = ";".join(f"{i / n:.3f}" for i in range(n + 1))
     type_anim = "" if STATIC else (
         f'<animate attributeName="width" values="{steps}" keyTimes="{times}" dur="2.2s" begin="0.9s" calcMode="discrete" fill="freeze"/>')
-    reveal = "" if STATIC else (
-        '<animate attributeName="height" values="0;36;72;108;144;180;216;252;288" dur="0.9s" calcMode="discrete" fill="freeze"/>')
+    tower_x = 900
     body = (
-        f'<rect width="{W}" height="{H}" fill="{BG}"/>' + stars(W, H)
-        + frame(0, 0, W, H, fill="none", border=INK, light=PANEL2)
-        # avatar
-        + frame(56, 56, 312, 312, fill=PANEL2)
-        + f'<clipPath id="av"><rect x="68" y="68" width="288" height="{288 if STATIC else 0}">{reveal}</rect></clipPath>'
-        + f'<image clip-path="url(#av)" x="68" y="68" width="288" height="288" style="image-rendering:pixelated" '
-          f'href="data:image/png;base64,{av}" xlink:href="data:image/png;base64,{av}"/>'
-        # text
-        + f'<text class="h pop" style="animation-delay:.2s" x="420" y="104" font-size="16" fill="{PINK}">PLAYER 1</text>'
-        + f'<text class="h pop" style="animation-delay:.4s" x="420" y="168" font-size="44" fill="{TEXT}">MAXIM</text>'
-        + f'<text class="h pop" style="animation-delay:.55s" x="420" y="228" font-size="44" fill="{GOLD}">KIRIK</text>'
-        + f'<clipPath id="ty"><rect x="420" y="250" width="{int(CW * n) if STATIC else 0}" height="40">{type_anim}</rect></clipPath>'
-        + f'<text class="t" clip-path="url(#ty)" x="420" y="280" font-size="34" fill="{CYAN}">{typed}</text>'
-        + f'<rect class="blink" x="{420 + int(CW * n) + 8}" y="256" width="14" height="28" fill="{CYAN}"/>'
+        frame(0, 0, W, H, fill=BG, border=INK, light=LIGHT2) + stars(W, 260, n=30)
+        + f'<g class="pop" style="animation-delay:.3s">' + skyline(700, 372, 470) + '</g>'
+        + f'<g class="pop" style="animation-delay:.6s">'
+        + sprite(BAITEREK, tower_x, 372 - len(BAITEREK) * 8, 8, {"c": INK, "g": GOLD, "w": TEXT if THEME == "dark" else "#fff3c4", "s": DIM})
+        + '</g>'
+        + f'<rect x="6" y="372" width="{W - 12}" height="42" fill="{PANEL2}"/>'
+        + "".join(f'<rect x="{x}" y="380" width="24" height="6" fill="{DIM}"/>' for x in range(30, W - 30, 48))
+        + f'<text class="h pop" style="animation-delay:.1s" x="60" y="92" font-size="16" fill="{PINK}">PLAYER 1</text>'
+        + f'<text class="h pop" style="animation-delay:.25s" x="60" y="160" font-size="52" fill="{TEXT}">MAXIM</text>'
+        + f'<text class="h pop" style="animation-delay:.4s" x="60" y="226" font-size="52" fill="{GOLD}">KIRIK</text>'
+        + f'<clipPath id="ty"><rect x="60" y="250" width="{int(CW * n) if STATIC else 0}" height="40">{type_anim}</rect></clipPath>'
+        + f'<text class="t" clip-path="url(#ty)" x="60" y="280" font-size="34" fill="{CYAN}">{typed}</text>'
+        + f'<rect class="blink" x="{60 + int(CW * n) + 8}" y="256" width="14" height="28" fill="{CYAN}"/>'
         + f'<g class="pop" style="animation-delay:3.2s">'
-          f'<rect class="pulse" x="420" y="318" width="14" height="14" fill="{GREEN}"/>'
-          f'<text class="t" x="446" y="332" font-size="28" fill="{GREEN}">ONLINE: OPEN TO WORK (FREELANCE + FULL-TIME)</text></g>'
-        + f'<text class="h blink" x="{W - 60}" y="{H - 44}" font-size="14" fill="{GOLD}" text-anchor="end">PRESS START &gt;</text>'
+          f'<rect class="pulse" x="60" y="318" width="14" height="14" fill="{GREEN}"/>'
+          f'<text class="t" x="86" y="332" font-size="28" fill="{GREEN}">ONLINE: OPEN TO WORK</text></g>'
+        + f'<text class="h blink" x="60" y="404" font-size="12" fill="{GOLD}">PRESS START &gt;</text>'
     )
     return svg(W, H, body)
 
@@ -296,7 +363,7 @@ def achievements():
         x = 40 + (k % 3) * 380
         y = 84 + (k // 3) * 146
         body += (f'<g class="pop" style="animation-delay:{0.2 + k * 0.18:.2f}s">'
-                 + frame(x, y, 360, 132, fill=PANEL2, light="#3a2f80", b=4)
+                 + frame(x, y, 360, 132, fill=PANEL2, light=LIGHT2, b=4)
                  + sprite(TROPHY, x + 22, y + 30, 7, {"a": col, "b": DIM})
                  + f'<text class="h" x="{x + 94}" y="{y + 38}" font-size="11" fill="{col}">{tag}</text>'
                  + wrap_lines(txt, x + 94, y + 68, 22, size=23, lh=23)
@@ -356,15 +423,20 @@ def activity():
 
 def main():
     OUT.mkdir(exist_ok=True)
-    (OUT / "hero.svg").write_text(hero())
+    (OUT / f"hero{SUFFIX}.svg").write_text(hero())
     for i, q in enumerate(QUESTS):
-        (OUT / f"{q['slug']}.svg").write_text(quest(q, i))
-    (OUT / "stats.svg").write_text(stats())
-    (OUT / "achievements.svg").write_text(achievements())
-    (OUT / "journey.svg").write_text(journey())
-    (OUT / "activity.svg").write_text(activity())
+        (OUT / f"{q['slug']}{SUFFIX}.svg").write_text(quest(q, i))
+    (OUT / f"stats{SUFFIX}.svg").write_text(stats())
+    (OUT / f"achievements{SUFFIX}.svg").write_text(achievements())
+    (OUT / f"journey{SUFFIX}.svg").write_text(journey())
+    (OUT / f"activity{SUFFIX}.svg").write_text(activity())
     print("cards written to", OUT)
 
 
 if __name__ == "__main__":
-    main()
+    if "THEME" in os.environ:
+        main()
+    else:
+        import subprocess, sys
+        for t in ("dark", "light"):
+            subprocess.run([sys.executable, __file__], env={**os.environ, "THEME": t}, check=True)
