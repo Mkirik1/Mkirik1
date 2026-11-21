@@ -22,5 +22,7 @@ for d in days:
     cur = cur + 1 if d["contributionCount"] else 0
     best = max(best, cur)
 out = {"total": cal["totalContributions"], "streak": best, "months": list(months.values())[-12:]}
-Path(__file__).resolve().parent.parent.joinpath("data", "activity.json").write_text(json.dumps(out, indent=1))
+dst = Path(__file__).resolve().parent.parent / "data" / "activity.json"
+dst.parent.mkdir(exist_ok=True)
+dst.write_text(json.dumps(out, indent=1))
 print(out["total"], "contributions")
